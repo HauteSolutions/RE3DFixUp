@@ -1,6 +1,8 @@
 # RE3DFixUp
 Utility to post-process XPS Print Files to provide continued functionality of Full Spectrum Laser RetinaEngrave3D
 
+(Please see the "Releases" link over on the right side of the GitHub page if you just want to download the EXE ------->
+
 Full Spectrum Laser (FSL) designs and manufactures Laser machines which utilize proprietary controllers.  The only software
 (Laser Driver) which will work with FSL Lasers is their own proprietary RetinaEngrave3D (RE3D) application.  Unfortunately,
 FSL has discontinued support for RE3D which now leaves many of our very expensive lasers (which REQUIRE) this software
