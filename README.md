@@ -1,7 +1,7 @@
 # RE3DFixUp
 (Please use the "Releases" link over on the right side of the GitHub page if you just want to download the EXE ------->
 
-- Utility to post-process XPS Print Files to provide continued functionality of Full Spectrum Laser RetinaEngrave3D
+Utility to post-process XPS Print Files to provide continued functionality of Full Spectrum Laser RetinaEngrave3D
 
 Full Spectrum Laser (FSL) designs and manufactures Laser machines which utilize proprietary controllers.  The only software
 (Laser Driver) which will work with FSL Lasers is their own proprietary RetinaEngrave3D (RE3D) application.  Unfortunately,
@@ -85,35 +85,33 @@ Usage:
 
 Options:
 
-- If you want to see whats happening in more detail, you can create a single INI file named RE3DFixUp.ini in the same folder as 
-  RE3DFixUp.exe.  In that file create a section named "[Config]" and create a single key named "TempFolder".  Set the value of
-  that key to a folder you would like to use to store/preserve the original XPSInput architecture and the new XPSOutput architecture.
-  For Example:
+If you want to see whats happening in more detail, you can create a single INI file named RE3DFixUp.ini in the same folder as 
+RE3DFixUp.exe.  In that file create a section named "[Config]" and create a single key named "TempFolder".  Set the value of
+that key to a folder you would like to use to store/preserve the original XPSInput architecture and the new XPSOutput architecture.
+For Example:
   
 [Config]
 TempFolder="C:\Temp\RE3dFixup"
   
-  Normally, RE3DFixup uses the standard Windows User Temp Folder architecture for its work (and cleans up afterwards), but if you want 
-  to preseve the before/after contents of your XPS files then this is a simple way to do that.  (Note that if the "XPSInput" or 
-  "XPSOutput" subfolders exist, their contents will be completely replaced!!)
+Normally, RE3DFixup uses the standard Windows User Temp Folder architecture for its work (and cleans up afterwards), but if you want 
+to preseve the before/after contents of your XPS files then this is a simple way to do that.  (Note that if the "XPSInput" or 
+"XPSOutput" subfolders exist, their contents will be completely replaced!!)
   
-  If you want to manually adjust/test/tweak the contents of your XPSOutput folder, just remember all you need to do is zip up the contents
-  of that folder and rename the resulting zip file to *.XPS.  You can confirm the integrity of your updates by using the 
-  Microsoft XPS Viewer and/or RE3D itself.
+If you want to manually adjust/test/tweak the contents of your XPSOutput folder, just remember all you need to do is zip up the contents
+of that folder and rename the resulting zip file to *.XPS.  You can confirm the integrity of your updates by using the 
+Microsoft XPS Viewer and/or RE3D itself.
   
-  Notes:
-  
-  I expect we are pretty early on in identifying ALL the ramifications of the XPS update.  However, this utility solved all the problems
-  I had encountered in all my test cases.  It would be foolish to expect we are not going to find any more along the way.  Hopefully
-  this utility will be helpful to some FSL Customers (unlike the company itself)...
-  
-  Disclaimer:  
-  
-  Please note that I only use/process Vector Files on my laser (Not BitMap or Raster) as all I typically do is cutting (not engraving).
-  While exporting files to a Bitmap and then loading them into RE3D ***SHOULD*** work just fine (as it bypasses the requirement to use
-  the XPS Data Format), its really of little value for a cut job (to try and convert a Vector image to Bitmap) as you can't cut with 
-  Bitmaps (only engrave).  As such, I'm not sure how XPS handles embedded bitmaps - but I'm happy to work with anyone (unlike FSL) who 
-  thinks this might be of value...
-  
+Notes:
 
-
+I expect we are pretty early on in identifying ALL the ramifications of the XPS update.  However, this utility solved all the problems
+I had encountered in all my test cases.  It would be foolish to expect we are not going to find any more along the way.  Hopefully
+this utility will be helpful to some FSL Customers (unlike the company itself)...
+  
+Disclaimer:  
+  
+Please note that I only use/process Vector Files on my laser (Not BitMap or Raster) as all I typically do is cutting (not engraving).
+While exporting files to a Bitmap and then loading them into RE3D ***SHOULD*** work just fine (as it bypasses the requirement to use
+the XPS Data Format), its really of little value for a cut job (to try and convert a Vector image to Bitmap) as you can't cut with 
+Bitmaps (only engrave).  As such, I'm not sure how XPS handles embedded bitmaps - but I'm happy to work with anyone (unlike FSL) who 
+thinks this might be of value...
+  
