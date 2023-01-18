@@ -76,7 +76,7 @@ RE3DFixUp does.
 
 Usage:  
 
-- Instead of printing directly to the "Full Spectrum Laser Print Driver", choose the "Microsft XPS Print Driver" instead
+- Instead of printing directly to the "Full Spectrum Laser Print Driver", print using the "Microsft XPS Print Driver"
 - Choose an output file extension (data format) of *.XPS (NOT the default *.OXPS)
 - (Optionally & Recommended, you can install the free "Microsoft XPS Viewer" to confirm the integrity of your original output file)
 - Run RE3DFixup and select your XPS output file for processing.  This will generate a new file named *_RE3DFixed.XPS.
@@ -112,8 +112,8 @@ Options:
   Please note that I only use/process Vector Files on my laser (Not BitMap or Raster) as all I typically do is cutting (not engraving).
   While exporting files to a Bitmap and then loading them into RE3D ***SHOULD*** work just fine (as it bypasses the requirement to use
   the XPS Data Format), its really of little value for a cut job (to try and convert a Vector image to Bitmap) as you can't cut with 
-  Bitmaps (only engrave).  As such, I'm not sure how XPS handles embedded bitmaps - but I'm happy to work with anyone who thinks this might
-  be of value (unlike FSL)...
+  Bitmaps (only engrave).  As such, I'm not sure how XPS handles embedded bitmaps - but I'm happy to work with anyone (unlike FSL) who 
+  thinks this might be of value...
   
 
 
