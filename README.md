@@ -90,8 +90,8 @@ Options:
   that key to a folder you would like to use to store/preserve the original XPSInput architecture and the new XPSOutput architecture.
   For Example:
   
-  [Config]
-  TempFolder="C:\Temp\RE3dFixup"
+[Config]
+TempFolder="C:\Temp\RE3dFixup"
   
   Normally, RE3DFixup uses the standard Windows User Temp Folder architecture for its work (and cleans up afterwards), but if you want 
   to preseve the before/after contents of your XPS files then this is a simple way to do that.  (Note that if the "XPSInput" or 
