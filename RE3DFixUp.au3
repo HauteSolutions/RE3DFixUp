@@ -10,7 +10,7 @@
 #include <_Zip.au3>
 
 Global $ProgName="RE3DFixUp"
-Global $ProgVer="v1.01"
+Global $ProgVer="v1.02"
 Global $ProgTitle = $ProgName & " " & $ProgVer
 
 Global $XPSInputFile = ""
@@ -18,6 +18,7 @@ Global $XPSInputFolder = ""
 Global $XPSOutputFile = ""
 Global $XPSOutputFolder = ""
 Global $TempFolder = ""
+Global $Welcome = ""
 
 Global $IniFile
 
@@ -31,7 +32,10 @@ $IniFile = StringTrimRight(@ScriptFullPath,4) & ".ini"
 GetConfig($IniFile)
 
 ; Display Startup Screen
-DisplayStartup()
+If $Welcome = "" Then
+	DisplayStartup()
+	IniWrite($IniFile, "Config", "Welcome", "Done")
+EndIf
 
 ; Get XPS File Name
 $XPSInputFile = FileOpenDialog($ProgTitle, ".", "XPS Files (*.xps)", $FD_FILEMUSTEXIST)
@@ -107,7 +111,7 @@ If $StaticResourceCounter > 0 Then
 	EndIf
 
 	FileMove($XPSOutputFile & ".zip", $XPSOutputFile & ".xps", $FC_OVERWRITE)
-	msgbox($MB_ICONINFORMATION, $ProgTitle, $StaticResourceCounter & " Static Resources Updated" & @CRLF & @CRLF & "New File: " & $XPSOutputFile & ".xps")
+	msgbox($MB_ICONINFORMATION, $ProgTitle, $StaticResourceCounter & " Static Resources Converted" & @CRLF & @CRLF & "New File: " & $XPSOutputFile & ".xps")
 
 Else
 	msgbox($MB_ICONINFORMATION, $ProgTitle, "NO Static Resources Found!" & @CRLF & @CRLF & "No Conversion Necessary!")
@@ -233,21 +237,21 @@ EndFunc
 
 Func Error_Exit($msg, $exit_code)
 	MsgBox($MB_ICONERROR, $ProgTitle, "Error: " & $msg)
-	Cleanup()
+	Cleanup($exit_code)
 	Exit($exit_code)
 EndFunc
 
 Func Info_Exit($msg, $exit_code)
 	MsgBox($MB_ICONINFORMATION, $ProgTitle, $msg)
-	CleanUp()
+	CleanUp($exit_code)
 	Exit($exit_code)
 EndFunc
 
-Func CleanUp()
+Func CleanUp($exit_code = 0)
 	If $TempFolder = "" Then
 		If FileExists($XPSOutputFolder) Then DirRemove($XPSOutputFolder, $DIR_REMOVE)
 		If FileExists($XPSInputFolder) Then DirRemove($XPSInputFolder, $DIR_REMOVE)
-	Else
+	ElseIf $exit_code = 0 Then
 		MsgBox($MB_ICONINFORMATION, $ProgTitle, "Temp Folders Preserved:" & @CRLF & @CRLF & _
 		"Input Folder:  " & $XPSInputFolder & @CRLF & _
 		"Output Folder: " & $XPSOutputFolder)
@@ -258,6 +262,7 @@ EndFunc
 Func GetConfig($IniFile)
 	If FileExists($IniFile) then
 		$TempFolder = IniRead($IniFile, "Config", "TempFolder", $TempFolder)
+		$Welcome    = IniRead($IniFile, "Config", "Welcome",    $Welcome)
 	EndIf
 EndFunc
 
