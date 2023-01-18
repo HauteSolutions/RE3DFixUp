@@ -1,7 +1,7 @@
 # RE3DFixUp
-Utility to post-process XPS Print Files to provide continued functionality of Full Spectrum Laser RetinaEngrave3D
-
 (Please use the "Releases" link over on the right side of the GitHub page if you just want to download the EXE ------->
+
+- Utility to post-process XPS Print Files to provide continued functionality of Full Spectrum Laser RetinaEngrave3D
 
 Full Spectrum Laser (FSL) designs and manufactures Laser machines which utilize proprietary controllers.  The only software
 (Laser Driver) which will work with FSL Lasers is their own proprietary RetinaEngrave3D (RE3D) application.  Unfortunately,
@@ -104,3 +104,14 @@ Options:
   I expect we are pretty early on in identifying ALL the ramifications of the XPS update.  However, this utility solved all the problems
   I had encountered in my test cases.  It would be foolish to expect we are not going to find any more along the way.  Hopefully
   this utility will be helpful to some FSL Customers (unlike the company itself)...
+  
+  Disclaimer:  
+  
+  Please note that I only use/process Vector Files on my laser (Not BitMap or Raster) as all I typically use it for is cutting (not engraving).
+  While exporting files to a Bitmap and then loading them into RE3D ***SHOULD*** work just fine (as it bypasses the requirement to use
+  the XPS Data Format), its really of little value for a cut job to try and convert a Vector image to Bitmap as you can't cut with 
+  Bitmaps (only engrave).  As such, I'm not sure how XPS handles embedded bitmaps - but I'm happy to work with anyone who thinks this might
+  be of value (unlike FSL)...
+  
+
+
