@@ -90,7 +90,7 @@ RE3DFixUp.exe.  In that file create a section named "[Config]" and create a sing
 that key to a folder you would like to use to store/preserve the original XPSInput architecture and the new XPSOutput architecture.
 For Example:
   
-[Config]
+[Config]  
 TempFolder="C:\Temp\RE3dFixup"
   
 Normally, RE3DFixup uses the standard Windows User Temp Folder architecture for its work (and cleans up afterwards), but if you want 
