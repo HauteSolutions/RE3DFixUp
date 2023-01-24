@@ -20,14 +20,14 @@ relatively unusable in a "current" Operating Environment.
 
 FSL's answer to this is to take our perfectly healthy Win10/Win11 machines and downgrade them to Win7.  (Seriously, this is what
 they told me!)  FSL apparently thinks its OK to compromise the functionality of our whole entire systems just because
-they don't want to update their software.  ...and FSL's Vary CAVALIER and SELF-CENTERED suggestion to downgrade your RE3D system to  
-Win7 is NOT going to work unless you are ALSO willing to run your CAD/Design software on the SAME BOX.  If you think you can dedicate 
-an old dusty Win7 Notebook simply to run RE3D, and then run your CAD/Design software on a current Win10/11 O/S, you would be mistaken.
-The issue starts at the point where the data is GENERATED, not where it is CONSUMED.  Your Win10/11 CAD box will STILL generate
-XPS Print files using the current (new) XPS spec and the Win7 RE3D box will STILL have no idea how to fully process them!  The 
-only way to use an older O/S to resolve this would be to downgrade your CAD/Design box to Win7.  In Fact, RE3D (running on Win11)
-would even process our files just fine as long as the data was GENERATED on a Win7 machine.  RE3D's failure is 
-not about where RE3D runs and READS the data, it's about where the data is CREATED (by your CAD/Design software)!
+they don't want to update their software.  ...and FSL's veryry CAVALIER and SELF-CENTERED suggestion to downgrade your RE3D system  
+to Win7 is NOT going to work unless you are ALSO willing to run your CAD/Design software on the SAME BOX.  If you think you can 
+dedicate an old dusty Win7 Notebook simply to run RE3D, and then run your CAD/Design software on a current Win10/11 O/S, you would
+be mistaken.The issue starts at the point where the data is GENERATED, not where it is CONSUMED.  Your Win10/11 CAD box will STILL
+generate XPS Print files using the current (new) XPS spec and the Win7 RE3D box will STILL have no idea how to fully process them!
+The only way to use an older O/S to resolve this would be to downgrade your CAD/Design box to Win7.  In Fact, RE3D (running on
+Win11) would even process our files just fine as long as the data was GENERATED on a Win7 machine.  RE3D's failure is not
+about where RE3D runs and READS the data, it's about where the data is CREATED (by your CAD/Design software)!
 
 I've also seen some workarounds which suggest rolling back the XPS update which came down at the end of 2022.  But, similarly,
 OTHER software (which IS properly maintained) may require on keeping these services up to date.  I'm also not going to
