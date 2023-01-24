@@ -20,7 +20,7 @@ relatively unusable in a "current" Operating Environment.
 
 FSL's answer to this is to take our perfectly healthy Win10/Win11 machines and downgrade them to Win7.  (Seriously, this is what
 they told me!)  FSL apparently thinks its OK to compromise the functionality of our whole entire systems just because
-they don't want to update their software.  ...and FSL's veryry CAVALIER and SELF-CENTERED suggestion to downgrade your RE3D system  
+they don't want to update their software.  ...and FSL's very CAVALIER and SELF-CENTERED suggestion to downgrade your RE3D system 
 to Win7 is NOT going to work unless you are ALSO willing to run your CAD/Design software on the SAME BOX.  If you think you can 
 dedicate an old dusty Win7 Notebook simply to run RE3D, and then run your CAD/Design software on a current Win10/11 O/S, you would
 be mistaken.The issue starts at the point where the data is GENERATED, not where it is CONSUMED.  Your Win10/11 CAD box will STILL
